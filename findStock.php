@@ -36,7 +36,7 @@ function check_max($nos, $i, $arr, $n, $tm, $tps, $word) {
   if ($n == 0) {
     return array(array(array($i-1, $arr[$i-1], $word, $nos)), $tm);
   }elseif ($tps == 0) {
-    $tmp = 1 * $arr[$i];
+    $tmp = 200 * $arr[$i];
     $tpsp = 1;
     list($nos1, $tm1) = buy($arr, $i, $tmp, $nos);
     list($d1, $tmx1) = check_max($nos1, $i+1, $arr, $n-1, $tm, $tpsp, 'buy');
